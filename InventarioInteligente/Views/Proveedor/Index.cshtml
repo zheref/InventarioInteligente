@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SmarketModels.Proveedor>
+
+@{
+    ViewBag.Title = "Todos los Proveedores - Smarket";
+}
+
+<h2>Todos los Proveedores</h2>
+
+<p>
+    @Html.ActionLink("Registrar nuevo proveedor", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            NIT
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Foto
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NIT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Foto)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { NIT = item.NIT })
+            @Html.ActionLink("Detalles", "Details", new { NIT = item.NIT })
+            @Html.ActionLink("Eliminar", "Delete", new { NIT = item.NIT })
+        </td>
+    </tr>
+}
+
+</table>

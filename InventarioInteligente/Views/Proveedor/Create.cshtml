@@ -1,0 +1,49 @@
+﻿@model SmarketModels.Proveedor
+
+@{
+    ViewBag.Title = "Registrar nuevo proveedor - Smarket";
+}
+
+<h2>Registrar nuevo proveedor</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Datos de nuevo proveedor</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NIT)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NIT)
+            @Html.ValidationMessageFor(model => model.NIT)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nombre)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nombre)
+            @Html.ValidationMessageFor(model => model.Nombre)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Foto)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Foto)
+            @Html.ValidationMessageFor(model => model.Foto)
+        </div>
+
+        <p>
+            <input id="command" type="submit" value="Registrar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Volver a listado de proveedores", "Index")
+</div>

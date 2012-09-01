@@ -1,0 +1,243 @@
+﻿
+/* Constantes */
+@backgroundColor:	Black;
+@generalFont:		"Segoe UI SemiLight";
+@headFont:			"Segoe UI";
+@colorUno:			White;
+@colorDos:			Teal;
+
+@xolorUno:			Olive;
+@xolorDos:			Orange;
+
+body 
+{
+	background-color:	@backgroundColor;
+	font-size:			.85em;
+	font-family:		@generalFont;
+	margin:				0;
+	padding:			0;
+	color:				#696969;
+	position:			absolute;
+	height:				97%;
+	width:				100%;
+	margin:				auto;
+
+	.page
+	{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-color: White;
+
+		.block
+		{
+			display: block;
+		}
+
+		header
+		{
+			.block;
+
+			height: 20%;
+			width: 100%;
+			position: relative;
+			vertical-align: top;
+			//background-color: White;
+			background-image:	url("photo.jpg");
+			
+			/* FONT */
+			#title
+			{
+				font-size: 2.0em;
+				font-family: @headFont;
+				color: White;
+				display: inline;
+				float: left;
+				margin-left: 22px;
+				span
+				{
+					font-size: .8em;
+					display: block;
+				}
+				h1 { font-weight: lighter; }
+			}
+
+			#logindisplay
+			{
+				float: right;
+				background-color: @xolorUno;
+				padding: 7px 12px 7px 12px;
+				color: White;
+				margin-right: 20px;
+				margin-top: 20px;
+				font-size: 1em;
+				a
+				{
+					color: inherit;
+					text-decoration: none;
+				}
+				&:hover
+				{
+					background-color: @xolorDos;
+				}
+			}
+
+			#menu
+			{
+				float: left;
+				margin-left: 20px;
+				margin-top: 55px;
+				li
+				{
+					display: inline;
+					font-size: 2.2em;
+					background-color: @colorDos;
+					padding: 10px 15px 10px 15px;
+					font-family: "Segoe UI Light";
+					a
+					{
+						color: White;
+						text-decoration: none;	
+					}
+					&:hover
+					{
+						background-color: @xolorDos;
+					}
+				}
+			}
+		}
+		
+		section#main
+		{
+			.block;
+
+			height: 60%;
+			//width: 100%;
+			position: relative;
+			vertical-align: middle;
+			background-color: White;
+			border-style: dotted;
+			border-width: thin;
+			border-color: gray;
+			border: 1px;
+			margin-left: 20px;
+
+			h2
+			{
+				font-size: 2em;
+			}
+			a
+			{
+				background-color: @colorDos;
+				padding: 7px 10px 7px 10px;
+				color: white;
+				text-decoration: none;
+				&:hover
+				{
+					background-color: @xolorDos;
+				}
+
+			}
+			table
+			{
+				border: 0px solid Lightgray;
+				cursor: pointer;
+				border-collapse: collapse;
+				tr
+				{
+					height: 40px;
+					border: 1px solid Lightgray;
+					th
+					{
+						background-color: LightGray;
+					}
+					td, th
+					{
+						padding: 0px 10px 0px 10px;
+					}
+					&:hover
+					{
+						background-color: LightGray;
+					}
+				}
+
+				a
+				{
+					margin: 0px 2px 0px 2px;
+					padding: 5px 10px 5px 10px;
+					background-color: Lightgray;
+					color: Black;
+					&:hover
+					{
+						background-color: orange;
+						color: White;
+					}
+				}
+			}
+			form
+			{
+				fieldset
+				{
+					position: relative;
+					border: none;
+				}
+				legend
+				{
+					font-size: 1.2em;
+				}
+				.editor-label
+				{
+					font-size: 1.2em;
+				}
+				.text-box
+				{
+					height: 25px;
+					padding: 2px 5px 2px 5px;
+					border-style: dotted;
+					border-width: thin;
+					border-color: @colorDos;
+					width: 250px;
+					font-family: "Consolas";
+
+					&:hover
+					{
+						border-style: solid;
+					}
+				}
+				#command
+				{
+					background-color: @xolorUno;
+					height: 30px;
+					padding: 6px 11px 6px 11px;
+					border: none;
+					font-size: 1.1em;
+					color: white;
+					&:hover
+					{
+						background-color: orange;
+					}
+				}
+			}
+		}
+		
+		footer
+		{
+			.block;
+
+			height: 20%;
+			width: 100%;
+			position: relative;
+			vertical-align: bottom;
+			background-color: Black;
+
+			#logo
+			{
+				float: right;
+				margin-right: 30px;
+				margin-top: 25px;
+			}
+		}
+	}
+	
+	
+}

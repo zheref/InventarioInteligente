@@ -1,0 +1,19 @@
+﻿<UserControl	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				mc:Ignorable="d"
+				x:Class="SmarketWPF.ProveedorEdit"
+				x:Name="UserControl" Height="240" Width="504"	>
+	<Grid x:Name="LayoutRoot">
+		<Label Content="Editar proveedor..." HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Style="{DynamicResource metroCaptionTitleLabel}"/>
+		<Label Content="Nombre" HorizontalAlignment="Left" Margin="8,43.28,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.474,1.233" Style="{DynamicResource metroCaptionLabel}"/>
+		<Label Content="NIT" HorizontalAlignment="Left" Margin="8,78.56,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.474,1.233" Style="{DynamicResource metroCaptionLabel}"/>
+		<Label Content="Foto" HorizontalAlignment="Left" Margin="8,113.84,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.474,1.233" Style="{DynamicResource metroCaptionLabel}"/>
+		<TextBox x:Name="txtNombre" Text="{Binding Nombre}" Margin="147.053,44.62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource metroTextBox2}" Height="29.94" HorizontalAlignment="Left" Width="332.947" MaxLength="15"/>
+		<TextBox x:Name="txtNIT" Text="{Binding NIT}" Margin="147.053,79.9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource metroTextBox2}" Height="29.94" HorizontalAlignment="Left" Width="332.947" MaxLength="10"/>
+		<TextBox x:Name="txtFoto" Text="{Binding Foto}" Margin="147.053,115.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource metroTextBox2}" Height="29.94" HorizontalAlignment="Left" Width="332.947" MaxLength="10"/>
+		<Button x:Name="btnEdit" Content="Actualizar proveedor" Margin="147.053,149.12,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="132.947" Style="{DynamicResource metroButtonStyle4_TealToOrange}" Height="34.88" Template="{DynamicResource metroButton}" Click="btnEdit_Click"/>
+		<Button x:Name="btnBack" Content="&lt;&lt; Volver" Margin="8,0,0,8" HorizontalAlignment="Left" Width="96" Style="{DynamicResource metroButtonStyle4_TealToOrange}" Template="{DynamicResource metroButton}" d:LayoutOverrides="HorizontalAlignment" Height="34.88" VerticalAlignment="Bottom" Click="btnBack_Click"/>
+	</Grid>
+</UserControl>

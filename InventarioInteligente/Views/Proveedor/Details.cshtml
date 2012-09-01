@@ -1,0 +1,30 @@
+﻿@model SmarketModels.Proveedor
+
+@{
+    ViewBag.Title = "Detalles de Proveedor";
+}
+
+<h2>Detalles de Proveedor</h2>
+
+<fieldset>
+    <legend>Proveedor "@Model.Nombre"</legend>
+
+    <div class="display-label">NIT</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NIT)
+    </div>
+
+    <div class="display-label">Nombre</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nombre)
+    </div>
+
+    <div class="display-label">Foto</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Foto)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { NIT = Model.NIT }) |
+    @Html.ActionLink("Volver a lista de proveedores", "Index")
+</p>

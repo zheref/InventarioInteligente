@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="SmarketWPF.ProveedorIndexModel">
+    <Position X="7.25" Y="1.25" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ProveedorIndexModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmarketWPF.ProveedorIndex">
+    <Position X="1.25" Y="1.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Views\ProveedorIndex.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="model" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmarketWPF.ProveedorCreate">
+    <Position X="1.25" Y="4" Width="2.25" />
+    <AssociationLine Name="model" Type="SmarketWPF.ProveedorCreateModel" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="5.125" />
+        <Point X="4.75" Y="5.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAIAAI=</HashCode>
+      <FileName>Views\ProveedorCreate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="model" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmarketWPF.ProveedorDetailsModel">
+    <Position X="13" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAgAAAgAAAAAIAAAAAQAAAAEI=</HashCode>
+      <FileName>ViewModels\ProveedorDetailsModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmarketWPF.ProveedorCreateModel">
+    <Position X="4.75" Y="4" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAACAAACAAAAAgAABgAAAAAAAAAAAQAAAAEI=</HashCode>
+      <FileName>ViewModels\ProveedorCreateModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

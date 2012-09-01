@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C34FDA04-F934-42F5-A0F2-4B19D36E2A8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmarketWPF</RootNamespace>
+    <AssemblyName>SmarketWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="GestorScreens.cs" />
+    <Compile Include="Market.cs" />
+    <Compile Include="ViewModels\GlobalViewModel.cs" />
+    <Compile Include="ViewModels\IProveedorDetails.cs" />
+    <Compile Include="ViewModels\ProveedorCreateModel.cs" />
+    <Compile Include="ViewModels\ProveedorDeleteModel.cs" />
+    <Compile Include="ViewModels\ProveedorDetailsIndexModel.cs" />
+    <Compile Include="ViewModels\ProveedorDetailsModel.cs" />
+    <Compile Include="ViewModels\ProveedorEditModel.cs" />
+    <Compile Include="ViewModels\ProveedorIndexModel.cs" />
+    <Compile Include="Views\ProveedorCreate.xaml.cs">
+      <DependentUpon>ProveedorCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProveedorDelete.xaml.cs">
+      <DependentUpon>ProveedorDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProveedorDetails.xaml.cs">
+      <DependentUpon>ProveedorDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProveedorEdit.xaml.cs">
+      <DependentUpon>ProveedorEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProveedorIndex.xaml.cs">
+      <DependentUpon>ProveedorIndex.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Content\Metro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\ProveedorCreate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ProveedorDelete.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ProveedorDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ProveedorEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ProveedorIndex.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="WPFDynamicViews.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\logoof.png" />
+    <Resource Include="Content\photo.jpg" />
+    <Resource Include="logoof.png" />
+    <Resource Include="photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="package.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmarketFirebirdDataAccess\SmarketFirebirdDataAccess.csproj">
+      <Project>{2E3AFEA9-8EDF-40EE-9F2C-F05612981ED2}</Project>
+      <Name>SmarketFirebirdDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmarketModels\SmarketModels.csproj">
+      <Project>{A9C61EF9-E60F-4172-AA48-0162EC2A75C4}</Project>
+      <Name>SmarketModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmarketMongoDbDataAccess\SmarketMongoDbDataAccess.csproj">
+      <Project>{CF5405F6-DEAD-45B0-A649-76EBF2291D7B}</Project>
+      <Name>SmarketMongoDbDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmarketMySQLDataAccess\SmarketMySQLDataAccess.csproj">
+      <Project>{9D787B4E-D3B9-42CD-8E4E-1F607E3D3AC1}</Project>
+      <Name>SmarketMySQLDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmarketSQLServerDataAccess\SmarketSQLServerDataAccess.csproj">
+      <Project>{A6EE5813-C9DB-4A13-A98D-EAA8188C9FBD}</Project>
+      <Name>SmarketSQLServerDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmarketSQLServerRemoteDataAccess\SmarketSQLServerRemoteDataAccess.csproj">
+      <Project>{9C0E538F-D2E9-4333-B645-DC8DB9F6314D}</Project>
+      <Name>SmarketSQLServerRemoteDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,25 @@
+INSERT INTO SMARTMARKET.dbo.PROVEEDOR
+(
+	NIT,
+	NOMBRE,
+	FOTO
+)
+VALUES
+(
+	'157891658',
+	'Mario Gonzales',
+	'dr459j.jpg'
+);
+
+INSERT INTO SMARTMARKET.dbo.PROVEEDOR
+(
+	NIT,
+	NOMBRE,
+	FOTO
+)
+VALUES
+(
+	'7855514',
+	'Coca-Cola',
+	'dr459k.jpg'
+);
